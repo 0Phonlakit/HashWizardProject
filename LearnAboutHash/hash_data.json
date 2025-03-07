@@ -1,0 +1,98 @@
+{
+    "MD5": {
+        "th": {
+            "description": "MD5 เป็นฟังก์ชันแฮชแบบ 128 บิตที่นิยมใช้ในการตรวจสอบความถูกต้องของข้อมูล แต่ไม่ปลอดภัยต่อการโจมตีแบบ collision และไม่แนะนำให้ใช้สำหรับความปลอดภัยสูง",
+            "hash-mode": "0",
+            "bit-length": 128,
+            "security": "ไม่ปลอดภัย เนื่องจากสามารถถูกโจมตีแบบ collision และ preimage ได้",
+            "usage": "ยังพบการใช้งานใน checksum และการตรวจสอบความถูกต้องของไฟล์ แต่ไม่แนะนำสำหรับการเข้ารหัส"
+        },
+        "en": {
+            "description": "MD5 (Message Digest Algorithm 5) is a 128-bit hash function widely used for data integrity verification. However, it is vulnerable to collision attacks and is not recommended for high-security applications.",
+            "hash-mode": "0",
+            "bit-length": 128,
+            "security": "Not secure due to vulnerability to collision and preimage attacks",
+            "usage": "Still used in checksums and file integrity verification but not recommended for cryptographic security"
+        }
+    },
+    "SHA1": {
+        "th": {
+            "description": "SHA-1 เป็นฟังก์ชันแฮช 160 บิตที่ถูกใช้อย่างแพร่หลายในอดีต แต่ปัจจุบันไม่ปลอดภัยเนื่องจากสามารถถูกโจมตีแบบ collision ได้",
+            "hash-mode": "100",
+            "bit-length": 160,
+            "security": "ไม่ปลอดภัย เนื่องจากถูกโจมตีแบบ collision ได้",
+            "usage": "เคยใช้ใน TLS, SSL, และการลงนามดิจิทัล แต่ถูกยกเลิกจากมาตรฐานความปลอดภัยใหม่"
+        },
+        "en": {
+            "description": "SHA-1 (Secure Hash Algorithm 1) is a 160-bit hash function that was widely used in the past. However, it is now considered insecure due to its vulnerability to collision attacks.",
+            "hash-mode": "100",
+            "bit-length": 160,
+            "security": "Not secure due to collision vulnerabilities",
+            "usage": "Previously used in TLS, SSL, and digital signatures but deprecated in modern security standards"
+        }
+    },
+    "SHA2-224": {
+        "th": {
+            "description": "SHA2-224 เป็นฟังก์ชันแฮชในตระกูล SHA-2 ซึ่งให้ค่าผลลัพธ์ขนาด 256 บิต เป็นที่นิยมในมาตรฐานความปลอดภัยสูง เช่น การเข้ารหัสข้อมูลและบล็อกเชน",
+            "hash-mode": "1300",
+            "bit-length": 256,
+            "security": "ปลอดภัยมาก ไม่มีการโจมตี collision ที่ทราบในปัจจุบัน",
+            "usage": "นิยมใช้ในมาตรฐานความปลอดภัยสูง เช่น บล็อกเชนและการเข้ารหัสข้อมูล"
+        },
+        "en": {
+            "description": "SHA2-224 is a hash function in the SHA-2 family that produces a 256-bit hash value. It is widely used in high-security standards, including encryption and blockchain applications.",
+            "hash-mode": "1300",
+            "bit-length": 256,
+            "security": "Highly secure, no known collision attacks as of today",
+            "usage": "Commonly used in high-security applications such as blockchain and data encryption"
+        }
+    },
+    "SHA2-256": {
+        "th": {
+            "description": "SHA2-256 เป็นฟังก์ชันแฮชที่ปลอดภัยกว่า MD5 และ SHA-1 โดยสร้างค่าแฮช 256 บิต เป็นส่วนหนึ่งของ SHA-2 และนิยมใช้ในระบบความปลอดภัยสูง",
+            "hash-mode": "1400",
+            "bit-length": 256,
+            "security": "ปลอดภัยสำหรับการใช้งานทั่วไป ไม่มีการโจมตีที่สามารถทำให้เกิด collision ได้ในปัจจุบัน",
+            "usage": "ใช้ในการเข้ารหัสข้อมูล, การยืนยันตัวตน, และบล็อกเชน"
+        },
+        "en": {
+            "description": "SHA2-256 is a more secure hash function than MD5 and SHA-1, generating a 256-bit hash value. It is part of the SHA-2 family and is widely used in high-security applications.",
+            "hash-mode": "1400",
+            "bit-length": 256,
+            "security": "Secure for general use, no known collision attacks as of today",
+            "usage": "Used in encryption, authentication, and blockchain applications"
+        }
+    },
+    "SHA2-512": {
+        "th": {
+            "description": "SHA2-512 เป็นฟังก์ชันแฮชในตระกูล SHA-2 ที่ให้ค่าผลลัพธ์ขนาด 512 บิต ใช้ในระบบที่ต้องการความปลอดภัยสูงและการเข้ารหัสที่แข็งแกร่ง",
+            "hash-mode": "1700",
+            "bit-length": 512,
+            "security": "ปลอดภัยสูงมาก ไม่มีการโจมตีที่ทำให้เกิด collision ได้ในปัจจุบัน",
+            "usage": "ใช้ในการเข้ารหัสที่ต้องการความปลอดภัยสูง เช่น การเงินและบล็อกเชน"
+        },
+        "en": {
+            "description": "SHA2-512 is a hash function in the SHA-2 family that produces a 512-bit hash value. It is used in systems requiring high security and strong encryption.",
+            "hash-mode": "1700",
+            "bit-length": 512,
+            "security": "Highly secure, no known collision attacks as of today",
+            "usage": "Used in high-security encryption applications such as finance and blockchain"
+        }
+    },
+    "HMAC-SHA1": {
+        "th": {
+            "description": "HMAC-SHA1 เป็นการแฮชที่ใช้คีย์ลับ (Secret Key) เพื่อเพิ่มความปลอดภัย สามารถป้องกันการโจมตีแบบ replay attack และ man-in-the-middle",
+            "hash-mode": "160",
+            "bit-length": 160,
+            "security": "ปลอดภัยเมื่อใช้ร่วมกับคีย์ลับ แต่ SHA-1 ไม่แนะนำให้ใช้ในระบบที่ต้องการความปลอดภัยสูง",
+            "usage": "ใช้ในการยืนยันความถูกต้องของข้อความและการตรวจสอบข้อมูล"
+        },
+        "en": {
+            "description": "HMAC-SHA1 is a hashing mechanism that uses a secret key to enhance security. It provides protection against replay attacks and man-in-the-middle attacks.",
+            "hash-mode": "160",
+            "bit-length": 160,
+            "security": "Secure when used with a secret key, but SHA-1 itself is not recommended for high-security applications",
+            "usage": "Used for message authentication and data integrity verification"
+        }
+    }
+}
