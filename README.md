@@ -24,10 +24,10 @@ The application focuses on hash encryption and decryption in various modes, incl
 
 ## Website details
 If "Encryption" mode and "MD5" algorithm are selected, and text is entered, clicking "Process" will display the corresponding MD5 hash in the output field.
-![GUIExample](gif/GUI.gif)
+![GUIExample](gif/Encrypt.gif)
 
 If "Decryption" mode and "MD5" algorithm are selected, and a hash is entered, clicking "Process" will display the corresponding word (if found) in the output field.
-![EncryptExample](gif/Encrypt.gif)
+![EncryptExample](gif/Decrypt.gif)
 
 HMAC-SHA1 Encryption with Salt Example
 ![EncryptSaltExample](gif/EncryptSalt.gif)
